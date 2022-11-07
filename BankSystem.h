@@ -1,9 +1,12 @@
+#ifndef BANK_SYSTEM_H
+#define BANK_SYSTEM_H
+
 #include <bits/stdc++.h>
 using namespace std;
 
 class BankingApplication {
     private:
-        
+
     public:
 
 };
@@ -30,5 +33,6 @@ class  SavingsBankAccount: public BankAccount{
 
 };
 
+#endif
 
 
