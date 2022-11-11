@@ -1,18 +1,55 @@
-#include "banking_application.h"
+#pragma once
+#include<iostream>
+#include<sstream>
+#include<string>
+#include "Client.h"
 
+using namespace std;
+class BankAccount
+{
+protected:
 
-class Bank_account{
-private:
-    int id;
-    double balance;
-    Client client;
+	string Id;
+	static int counter;
+	double balance;
+	Client* ptr;
+
 public:
-    Bank_account();
-    Bank_account(int account_id,double balance);
-    void set_id(int id);
-    void set_balance(double balance);
-    int get_id();
-    double get_balance();
-    void withdraw(double money);
-    void deposit(double money);
+
+	int deposit(double amount);
+	int withdraw(double amount);
+
+
+
+	void setptr(Client* i) {
+		ptr = i;
+	}
+
+	void setId(string Id) {
+		
+		counter++;
+		stringstream st;
+		st << counter;
+		string a = st.str();
+		string b = "FCAI-";
+		string f = b + a;
+		Id = f ;
+		this->Id = Id;
+	}
+	void setBalance(double balance) {
+		this->balance = balance;
+	}
+	string getId() {
+		return this->Id;
+	}
+
+	double getBalance() {
+		return this->balance;
+	}
+	BankAccount( double balance = 0) {
+		string id;
+		setId(id);
+		setBalance(balance);
+	}
+	 
 };
