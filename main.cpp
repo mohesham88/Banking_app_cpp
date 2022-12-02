@@ -1,15 +1,11 @@
-#include<bits/stdc++.h>
-#include "client.cpp"
+#include"bank_app.cpp"
 
-using namespace std;
 
 
 int main(){
-
-
     
-    
-
+    BankingApplication b;
+    b.run();
 
     return 0;
 }

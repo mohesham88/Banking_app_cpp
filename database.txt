@@ -1,0 +1,3 @@
+Mohamed Hesham  , Giza , 01150095409 , 8345 , FCAI-1 , saving
+Adham Mohamed  , Haram , 0233422432 , 7800 , FCAI-2 , basic
+Yassen Mohsen  , Cairo , 01122222222 , 5722 , FCAI-3 , saving
